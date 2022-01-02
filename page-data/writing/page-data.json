@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-writing-js",
     "path": "/writing/",
-    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2021년 07월 23일","title":"My First Post"},"id":"1e73c98b-61cb-5fa3-be70-f4d17eeb9e70"}]}},"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2022년 01월 03일","title":"뭔소리야"},"id":"556e165f-23c0-5c98-88ea-74b5dba0d040"}]}},"pageContext":{}},
     "staticQueryHashes": ["3649515864","3838399766","63159454"]}

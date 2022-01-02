@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-log-js",
     "path": "/log/",
-    "result": {"data":{"allMdx":{"nodes":[]}},"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2022년 01월 03일","title":"당근마켓 프론트엔드 JD"},"id":"2f6ff08d-2f05-59d8-aef5-10debac3cfb0"}]}},"pageContext":{}},
     "staticQueryHashes": ["3649515864","3838399766","63159454"]}
