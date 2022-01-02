@@ -1,13 +1,28 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `such a gunner 👈🏼`,
+    nav: [
+      {
+        label: "Writing",
+        route: "/writing",
+      },
+      {
+        label: "Log",
+        route: "/log",
+      },
+      {
+        label: "TIL",
+        route: "til",
+      },
+    ],
+    description: `May the chill be with you.`,
+    author: `@suchagunner`,
+    siteUrl: `https://suchagunner.github.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-client-side-redirect`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,15 +35,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `such a gunner 👈🏼`,
+        short_name: `such a gunner 👈🏼`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        display: `standalone`,
+        icon: `src/images/logo-io.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

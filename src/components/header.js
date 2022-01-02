@@ -1,42 +1,64 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+import Nav from "./nav"
+import * as _style from "./header.module.css"
+
+const Header = ({ siteTitle, nav }) => {
+  const data = useStaticQuery(graphql`
+    query SiteNavQuery {
+      site {
+        siteMetadata {
+          nav {
+            label
+            route
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <header
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        position: "sticky",
+        top: 0,
+        height: 80,
+        width: "100%",
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          margin: `0 auto`,
+          maxWidth: 768,
+          height: "100%",
+          padding: `1rem`,
+        }}
+      >
+        <h1 style={{ margin: 0 }}>
+          <Link
+            to="/"
+            className={_style.title}
+          >
+            <div>{siteTitle}</div>
+          </Link>
+        </h1>
+        <Nav link={data.site.siteMetadata.nav} />
+      </div>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
+Nav.propTypes = {
+  items: PropTypes.array,
 }
 
 export default Header

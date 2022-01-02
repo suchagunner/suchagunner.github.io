@@ -1,0 +1,9 @@
+.title {
+  color: #292a2b;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.title:hover {
+  color: burlywood;
+}
