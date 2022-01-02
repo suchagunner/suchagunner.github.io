@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-writing-js",
     "path": "/writing/",
-    "result": {"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2021년 07월 23일","title":"My First Post"},"id":"1e73c98b-61cb-5fa3-be70-f4d17eeb9e70"}]}},"pageContext":{}},
     "staticQueryHashes": ["3649515864","3838399766","63159454"]}

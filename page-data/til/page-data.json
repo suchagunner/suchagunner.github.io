@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-til-js",
     "path": "/til/",
-    "result": {"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[]}},"pageContext":{}},
     "staticQueryHashes": ["3649515864","3838399766","63159454"]}
