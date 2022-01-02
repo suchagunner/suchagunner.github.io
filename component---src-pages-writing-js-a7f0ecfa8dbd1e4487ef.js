@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[676],{6466:function(t,e,a){a.r(e);var r=a(7294),n=a(2697),u=a(3751);e.default=function(){return r.createElement(n.Z,null,r.createElement(u.Z,{title:"writing"}))}}}]);
+//# sourceMappingURL=component---src-pages-writing-js-a7f0ecfa8dbd1e4487ef.js.map
