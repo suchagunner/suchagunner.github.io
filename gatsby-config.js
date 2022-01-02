@@ -12,7 +12,7 @@ module.exports = {
       },
       {
         label: "TIL",
-        route: "til",
+        route: "/til",
       },
     ],
     description: `May the chill be with you.`,
