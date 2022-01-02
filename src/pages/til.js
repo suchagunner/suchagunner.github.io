@@ -5,11 +5,11 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const WritingPage = () => (
+const TILPage = () => (
   <Layout>
-    <Seo title="Writing" />
+    <Seo title="TIL" />
     
   </Layout>
 )
 
-export default WritingPage
+export default TILPage

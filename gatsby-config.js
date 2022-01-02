@@ -46,9 +46,10 @@ module.exports = {
         icon: `src/images/logo-io.png`, // This path is relative to the root of the site.
       },
     },
+    "gatsby-plugin-web-font-loader",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-  pathPrefix: "/suchagunner.github.io"
+  pathPrefix: "/suchagunner.github.io",
 }
