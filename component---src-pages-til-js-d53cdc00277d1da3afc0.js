@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[736],{9555:function(e,t,a){a.r(t);var r=a(7294),n=a(2697),u=a(3751);t.default=function(){return r.createElement(n.Z,null,r.createElement(u.Z,{title:"Today I Learnt"}))}}}]);
+//# sourceMappingURL=component---src-pages-til-js-d53cdc00277d1da3afc0.js.map
