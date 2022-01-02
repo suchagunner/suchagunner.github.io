@@ -25,7 +25,10 @@ const Header = ({ siteTitle, nav }) => {
         position: "sticky",
         top: 0,
         height: 80,
+        background: "#ffffff",
         width: "100%",
+        zIndex: 1600,
+        fontFamily: "Poppins"
       }}
     >
       <div
@@ -43,6 +46,7 @@ const Header = ({ siteTitle, nav }) => {
           <Link
             to="/"
             className={_style.title}
+            style={{ whiteSpace: "nowrap" }}
           >
             <div>{siteTitle}</div>
           </Link>

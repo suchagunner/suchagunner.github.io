@@ -1,11 +1,12 @@
 .link {
   font-size: 0.875rem;
   font-weight: 500;
-  margin: 1rem;
+  margin: 0.45rem;
   text-decoration-color: burlywood;
   text-decoration: none;
   color: #292a2b;
   transition: color .2s;
+  font-family: "Poppins"
 }
 
 .link:hover {
@@ -14,5 +15,5 @@
 }
 
 .nav {
-  padding: 0 12px;
+  padding: 0 0.25rem;
 }

@@ -1,0 +1,28 @@
+.item {
+  padding: 1rem 0 0 0;
+  padding-bottom: 0;
+  border-bottom: solid 1px burlywood;
+}
+
+@media screen and (min-width: 768px){
+  .item {
+    padding: 2rem 0 0 0;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #292a2b;
+  transition: color .2s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.5em;
+  max-height: 3em;
+}
+
+.link:hover {
+  color: burlywood;
+}
