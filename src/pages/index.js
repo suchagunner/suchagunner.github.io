@@ -45,7 +45,7 @@ const IndexPage = () => (
         alt="Me"
       />
       <div style={{ flex: 1 }}>
-        <h2>Journey👨🏽‍💻</h2>
+        <h2>journey👨🏽‍💻</h2>
         <ul className={_style.list}>
           <li className={_style.item}>
             <h3 style={{ marginBottom: "0.25rem" }}>블루웨일컴퍼니</h3>
