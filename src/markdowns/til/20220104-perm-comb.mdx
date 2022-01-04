@@ -1,0 +1,76 @@
+---
+title: "[알고리즘] 순열과 조합"
+date: "2022-01-04"
+---
+
+# [알고리즘] 순열과 조합
+
+## ❓용어 설명
+
+> 💡**순열** (順列, 문화어: 차례무이, 영어: permutation 퍼뮤테이션) 또는 치환(置換)은 순서가 부여된 임의의 집합을 다른 순서로 뒤섞는 연산이다. ⇒ **nPr** <br />
+💡**조합** (組合, 문화어: 무이, 영어: combination)은 서로 다른 n개의 원소를 가지는 어떤 집합. (사실, 집합은 서로 다른 원소의 모임으로 정의된다.) 이는 n개의 원소로 이루어진 집합에서 r개의 원소로 이루어진 부분집합을 만드는 것 혹은 찾는 것과 같다. ⇒ **nCr**
+
+## 🧐
+내가 받은 교육과정 어딘가에, 중학교 무렵인 듯 하다, 흐릿한 것들 가운데 순열과 조합에 대한 기억은 꽤 선명하게 남아있다. 그 무렵에는 팩토리얼이라는 단어가 멋있어서인지, 학원에서 쎈수학을 얼른 다 풀고 피시방에 갈 생각인지 하튼 “이팩, 사팩, 오팩” 거리면서 순열·조합 공식을 열라 외워댔었는데; 알고리즘 공부로 만나게 되었다. 
+
+---
+
+순열과 조합이  공통적으로 가지고 있는 특징은 다음과 같다.
+
+- <u>몇개가 있는지(n)</u>
+- <u>몇개를 뽑을 것인지(r)</u>
+
+그렇다면 여기서 둘의 차이는 말그대로
+
+- 조합인지 (*Combination*)
+- 조합, __'아 근데 순서를 곁들인'__ (*Permutation*)
+
+정도이지 않을까.
+
+```jsx
+/* 조합 */
+function combination(arr, length) {
+  const result = [];
+  if(length === 1) return arr.map(a => [a])
+  arr.forEach((e, idx, origin) => {
+    const _fix = e;
+    const _rest = origin.slice(idx + 1);
+    const _combination = combination(_rest, length - 1);
+    const _joined = [_fix, ..._combination]
+    result.push(..._joined);
+  });
+
+  return result;
+};
+```
+
+```jsx
+/* 순열 */
+function permutation(arr, length) {
+  if(length === 1) return arr.map(a => [a])
+
+  const result = [];
+  return arr.map((e, idx, origin) => {
+    const _fix = e;
+    const _rest = origin.filter((e, i) => i !== idx);
+    const _permutation = permutation(_rest, length - 1);
+    const _joined = [_fix, ..._permutation]
+    result.push(...joined);
+  });
+
+  return result;
+};
+```
+
+저기서 __'아 근데 순서를 곁들인'__  부분은 다음과 같다.
+
+```jsx
+const _rest = origin.slice(idx + 1); //조합    
+const _rest = origin.filter((e, i) => i !== idx); //순열
+```
+**순열의 경우** 인덱스를 순회하면서 자기 자신을 제외한 나머지 인덱스의 엘리먼트 모두를 뽑을 수 있다.
+- (index 1, index 2) 와 (index2, index 1)는 다르데
+
+**조합의 경우** 인덱스를 순회하면서 이전 인덱스의 엘리먼트를 다시 뽑지 못하게 **선형적**으로만 나아간다고 하면 
+- (index 1, index 2) 와 (index2, index 1)는 같은데
+

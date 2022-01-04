@@ -47,7 +47,7 @@ const IndexPage = () => (
       <div style={{ flex: 1 }}>
         <h2>journey👨🏽‍💻</h2>
         <ul className={_style.list}>
-          <li className={_style.item}>
+          <li className={_style.listItem}>
             <h3 style={{ marginBottom: "0.25rem" }}>블루웨일컴퍼니</h3>
             <p>프론트엔드 개발 및 네이티브 앱 개발</p>
             <p style={{ color: "#646464" }}>2020.02 ~</p>
