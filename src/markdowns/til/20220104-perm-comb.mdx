@@ -28,23 +28,6 @@ date: "2022-01-04"
 정도이지 않을까.
 
 ```jsx
-/* 조합 */
-function combination(arr, length) {
-  const result = [];
-  if(length === 1) return arr.map(a => [a])
-  arr.forEach((e, idx, origin) => {
-    const _fix = e;
-    const _rest = origin.slice(idx + 1);
-    const _combination = combination(_rest, length - 1);
-    const _joined = [_fix, ..._combination]
-    result.push(..._joined);
-  });
-
-  return result;
-};
-```
-
-```jsx
 /* 순열 */
 function permutation(arr, length) {
   if(length === 1) return arr.map(a => [a])
@@ -56,6 +39,23 @@ function permutation(arr, length) {
     const _permutation = permutation(_rest, length - 1);
     const _joined = [_fix, ..._permutation]
     result.push(...joined);
+  });
+
+  return result;
+};
+```
+
+```jsx
+/* 조합 */
+function combination(arr, length) {
+  const result = [];
+  if(length === 1) return arr.map(a => [a])
+  arr.forEach((e, idx, origin) => {
+    const _fix = e;
+    const _rest = origin.slice(idx + 1);
+    const _combination = combination(_rest, length - 1);
+    const _joined = [_fix, ..._combination]
+    result.push(..._joined);
   });
 
   return result;
