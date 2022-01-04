@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-til-js",
     "path": "/til/",
-    "result": {"data":{"allMdx":{"nodes":[]}},"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2022년 01월 04일","title":"[알고리즘] 순열과 조합"},"id":"cd5e5885-e128-5806-b79e-34400b9aa2ed"}]}},"pageContext":{}},
     "staticQueryHashes": ["3649515864","3838399766","63159454"]}
