@@ -37,7 +37,7 @@ function permutation(arr, length) {
     const _fix = e;
     const _rest = origin.filter((e, i) => i !== idx);
     const _permutation = permutation(_rest, length - 1);
-    const _joined = [_fix, ..._permutation]
+    const _joined = _permutation.map(o => [_fix, ...o])
     result.push(...joined);
   });
 
@@ -54,7 +54,7 @@ function combination(arr, length) {
     const _fix = e;
     const _rest = origin.slice(idx + 1);
     const _combination = combination(_rest, length - 1);
-    const _joined = [_fix, ..._combination]
+    const _joined = _combination.map(o => [_fix, ...o])
     result.push(..._joined);
   });
 
