@@ -34,7 +34,7 @@ export const query = graphql`
   query {
     allMdx(
       sort: { fields: frontmatter___date, order: DESC }
-      filter: { fileAbsolutePath: { regex: "/log/" } }
+      filter: { fileAbsolutePath: { regex: "/\/log\//" } }
     ) {
       nodes {
         frontmatter {

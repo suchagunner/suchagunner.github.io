@@ -3,10 +3,6 @@ module.exports = {
     title: `such a gunner 👈🏼`,
     nav: [
       {
-        label: "Writing",
-        route: "/writing",
-      },
-      {
         label: "Log",
         route: "/log",
       },
