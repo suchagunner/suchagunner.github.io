@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[676],{6466:function(t,e,a){a.r(e);var r=a(7294),n=(a(5444),a(2697)),i=a(3751);e.default=function(t){t.data;return r.createElement(n.Z,{pageTitle:"Writing List"},r.createElement(i.Z,{title:"Writing"}))}}}]);
-//# sourceMappingURL=component---src-pages-writing-js-3994ac08bcc1c069c3cc.js.map

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-log-js",
     "path": "/log/",
-    "result": {"data":{"allMdx":{"nodes":[]}},"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2022년 04월 20일","title":"나의 운동"},"id":"983105c9-816e-556c-9fd3-95e87d1f2950"}]}},"pageContext":{}},
     "staticQueryHashes": ["3649515864","3838399766","63159454"]}

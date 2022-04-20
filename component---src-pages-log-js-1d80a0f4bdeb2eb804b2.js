@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[594],{5833:function(e,t,a){a.r(t);var r=a(7294),u=a(2697),l=a(3751);t.default=function(){return r.createElement(u.Z,null,r.createElement(l.Z,{title:"Log"}))}}}]);
-//# sourceMappingURL=component---src-pages-log-js-1d80a0f4bdeb2eb804b2.js.map
