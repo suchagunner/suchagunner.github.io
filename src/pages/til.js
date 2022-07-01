@@ -33,7 +33,7 @@ const TILPage = ({ data }) => {
           }}
           quality={95}
           formats={["auto", "webp", "avif"]}
-          alt="Me"
+          alt="TIL"
         />
       </section>
 
