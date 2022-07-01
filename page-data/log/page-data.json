@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-log-js",
-    "path": "/log/",
-    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2022년 04월 20일","title":"나의 운동"},"id":"983105c9-816e-556c-9fd3-95e87d1f2950"}]}},"pageContext":{}},
-    "staticQueryHashes": ["3649515864","3838399766","63159454"]}
+{"componentChunkName":"component---src-pages-log-js","path":"/log/","result":{"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2022년 04월 20일","title":"나의 운동","description":"여전히 운동은 괴롭고 힘들고 지루하고 근데 필요하고 막 하고싶고."},"id":"5c97e899-a5b0-5e4c-83be-7b0d1a43fdd6"}]}},"pageContext":{}},"staticQueryHashes":["3649515864","3838399766","63159454"]}

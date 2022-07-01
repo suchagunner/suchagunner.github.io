@@ -1,5 +1,1 @@
-{
-    "componentChunkName": "component---src-pages-til-js",
-    "path": "/til/",
-    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2022년 01월 04일","title":"[알고리즘] 순열과 조합"},"id":"18c8d1fc-94df-5807-8089-388d869d9e44"}]}},"pageContext":{}},
-    "staticQueryHashes": ["3649515864","3838399766","63159454"]}
+{"componentChunkName":"component---src-pages-til-js","path":"/til/","result":{"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"2022년 01월 04일","title":"[알고리즘] 순열과 조합","description":null},"id":"b69f67da-2aec-56c2-9ce4-2c75c9102416"}]}},"pageContext":{}},"staticQueryHashes":["3649515864","3838399766","63159454"]}
