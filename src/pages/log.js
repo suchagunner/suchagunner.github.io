@@ -24,7 +24,7 @@ const LogPage = ({ data }) => {
         style={{ position: "relative", width: "100%", paddingBottom: "37.5%" }}
       >
         <StaticImage
-          src="../images/IMG_1772.jpg"
+          src="../images/bg.section.log.jpg"
           style={{
             position: "absolute",
             top: "0",
