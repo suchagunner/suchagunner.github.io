@@ -1,14 +1,18 @@
 .item {
   padding: 1rem 0 0 0;
   padding-bottom: 0;
-  border-bottom: solid 1px burlywood;
+  border-bottom: solid 1px #ebebeb;
 }
 
-@media screen and (min-width: 768px){
+/* article.item + article.item {
+  border-bottom: solid 1px #ebebeb;
+} */
+
+/* @media screen and (min-width: 768px){
   .item {
     padding: 2rem 0 0 0;
   }
-}
+} */
 
 .link {
   text-decoration: none;
@@ -24,5 +28,5 @@
 }
 
 .link:hover {
-  color: burlywood;
+  color: #ebebeb;
 }

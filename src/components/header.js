@@ -28,7 +28,8 @@ const Header = ({ siteTitle, nav }) => {
         background: "#ffffff",
         width: "100%",
         zIndex: 1600,
-        fontFamily: "Poppins"
+        fontFamily: "Poppins",
+        borderBottom: "solid 1px #ebebeb",
       }}
     >
       <div
@@ -37,7 +38,7 @@ const Header = ({ siteTitle, nav }) => {
           justifyContent: "space-between",
           alignItems: "center",
           margin: `0 auto`,
-          maxWidth: 768,
+          maxWidth: 1024,
           height: "100%",
           padding: `1rem`,
         }}

@@ -2,7 +2,7 @@
   font-size: 0.875rem;
   font-weight: 500;
   margin: 0.45rem;
-  text-decoration-color: burlywood;
+  text-decoration-color: #ebebeb;
   text-decoration: none;
   color: #292a2b;
   transition: color .2s;
@@ -10,8 +10,8 @@
 }
 
 .link:hover {
-  color: burlywood;
-  text-decoration: solid 2px burlywood underline;
+  color: #ebebeb;
+  text-decoration: solid 2px #ebebeb underline;
 }
 
 .nav {

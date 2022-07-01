@@ -62,10 +62,10 @@ module.exports = {
         name: `such a gunner 👈🏼`,
         short_name: `such a gunner 👈🏼`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#ebebeb`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        theme_color: `#ebebeb`,
         display: `standalone`,
         icon: `src/images/logo-io.png`, // This path is relative to the root of the site.
       },
