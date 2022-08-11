@@ -16,9 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const postTemplate = path.resolve(__dirname, `src/templates/post.js`);
   queryResults.data.allMdx.nodes.forEach(node => {
-    let pathPrefix = "/writing"
-    if (node.fileAbsolutePath.includes("/writing/")) pathPrefix = `/writing`
-    else if (node.fileAbsolutePath.includes("/log/")) pathPrefix = `/log`
+    if (node.fileAbsolutePath.includes("/log/")) pathPrefix = `/log`
     else if (node.fileAbsolutePath.includes("/til/")) pathPrefix = `/til`
 
     createPage({
