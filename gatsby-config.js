@@ -8,7 +8,7 @@ module.exports = {
       },
       {
         label: "TIL",
-        route: "/til",
+        route: "https://suchagunner.github.io/TIL",
       },
     ],
     description: `May the chill be with you.`,
