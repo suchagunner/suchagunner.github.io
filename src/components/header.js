@@ -38,7 +38,6 @@ const Header = ({ siteTitle, nav }) => {
           justifyContent: "space-between",
           alignItems: "center",
           margin: `0 auto`,
-          maxWidth: 1024,
           height: "100%",
           padding: `1rem`,
         }}

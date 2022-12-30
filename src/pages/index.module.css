@@ -1,18 +1,6 @@
-.history {
-  display: flex;
-  gap: 1.5rem;
-  align-items: top;
-}
-
-@media screen and (max-width: 768px) {
-  .history {
-    flex-direction: column;
-  }
-}
-
 .list {
   margin: 0;
-  border-bottom: solid 1px #ebebeb;
+  border: dashed 2px #ebebeb;
 }
 
 .listItem {

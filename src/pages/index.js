@@ -1,6 +1,5 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -9,23 +8,63 @@ import * as _style from "./index.module.css"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1 style={{ fontSize: "2.25rem", fontFamily: "Poppins" }}>welcome</h1>
-    <p style={{ color: "#000000", fontSize: "1rem" }}>
-      안녕하세요.😁 개발을 시작한지 <i>2년이</i> 조금 넘은 소프트웨어 개발자{" "}
-      <b>이건호</b>입니다. 여기선 개발하면서 느끼는 저의 생각들이나 기억하고
-      싶은 것들을 기록하고 있습니다.
-    </p>
-    <div className={_style["history"]}>
-      <StaticImage
-        src="../images/profile-zepeto.png"
-        width={200}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="Me"
-      />
-      <div style={{ flex: 1 }}>
-        <h2>journey👨🏽‍💻</h2>
+    <article style={{ margin: "2rem 1rem" }}>
+      <section style={{ display: "flex", gap: 24, alignItems: "center" }}>
+        <figure style={{ textAlign: "center" }}>
+          <StaticImage
+            src="../images/profile-zepeto.png"
+            width={92}
+            height={92}
+            transformOptions={{ fit: "contain", cropFocus: "attention" }}
+            quality={95}
+            style={{ borderRadius: '50%' }}
+            imgStyle={{ borderRadius: "50%" }}
+            backgroundColor="rgb(88, 72, 248)"
+            formats={["auto", "webp", "avif"]}
+            alt="Me"
+          />
+        </figure>
+        <h1 style={{ flex: "0 1 208px" }}>
+          안녕하세요!
+          <br />
+          프론트엔드 개발자 이건호입니다.
+        </h1>
+      </section>
+
+      <section style={{ marginTop: "2rem" }}>
+        <h2>journey</h2>
         <ul className={_style.list}>
+          <li className={_style.listItem}>
+            <h3 style={{ marginBottom: "0.25rem" }}>Kurly</h3>
+            <div style={{ marginTop: "0.5rem" }}>
+              <dl>
+                <dt>
+                  ·{" "}
+                  <a
+                    href="https://www.kurly.com"
+                    style={{
+                      textDecoration: "none",
+                      color: "#646464",
+                      fontWeight: "bold",
+                    }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    CMS 및 내부 툴
+                  </a>{" "}
+                  개발
+                </dt>
+                <dd>
+                  커머스 도메인에서의 내부 어드민 툴 개발
+                  <ul style={{ marginTop: "1rem" }}>
+                    <li style={{ margin: 0 }}>회원/마케팅, 상품</li>
+                    <li style={{ margin: 0 }}>WYSIWYG 에디터</li>
+                  </ul>
+                </dd>
+              </dl>
+              <p style={{ color: "#646464" }}>2022.08 ~ current</p>
+            </div>
+          </li>
           <li className={_style.listItem}>
             <h3 style={{ marginBottom: "0.25rem" }}>블루웨일컴퍼니</h3>
             <div style={{ marginTop: "0.5rem" }}>
@@ -82,8 +121,8 @@ const IndexPage = () => (
             </div>
           </li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </article>
   </Layout>
 )
 
